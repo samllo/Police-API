@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Police API Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts-->
+  
+
+  <script src="https://kit.fontawesome.com/8ae4b7406a.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+<div id="appContainer">
+</div>
+
+<div id="userInput">
+
+  <input list="Location" type="text">
+  <datalist id="Location">
+      <option value="Manchster"/>
+      <option value="Cardiff"/>
+      <option value="Liverpool"/>
+      <option value="Birmingham"/>
+      <option value="Newcastle"/>
+  </datalist>
+
+  <input list="crimeType" type="text">
+  <datalist id="crimeType">
+      <option value="Burglary"/>
+      <option value="Anti Social Behaviour"/>
+      <option value="Bicyle Theft"/>
+      <option value="Violent Crime"/>
+  </datalist>
+
+</div>
+
+<!--
+<table class="totals">
+  <tr><td>Burglary count:</td><td class="burglary"> <b></b></td></tr>
+  <tr><td>Anti-social behaviour: </td> <td class="asbo"><b></b></td></tr>
+  <tr><td>Bicyle-theft: </td> <td class="bike"><b></b></td></tr>
+    <tr><td>Arson: </td> <td class="arson"><b></b></td></tr>
+  <tr><td>Violent-crime: </td> <td class="violent"><b></b></td></tr>
+</table>
+
+<table class="crimes">
+  <tr>
+    <th>category</th>
+    <th>location</th>
+    <th>street</th>
+    <th>uniqueid</th>
+        <th>month</th>
+  </tr>
+</table>
+-->
+
+<input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+<div id="map">dd</div>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0HDDxGnyhFJMdE0sIjA2283SjK11L3KQ&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    ></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
